@@ -53,9 +53,17 @@ p {
 }
 
 main {
-    width: 75%;
+    width: auto;
     display: inline-block;
     margin-left: 20px;
+    margin-top: 25px;
+}
+
+.First {
+    height: auto;
+    width: 100%;
+    margin-bottom: auto;
+    padding: 0%;
 }
 
 .Main {
@@ -74,4 +82,64 @@ main {
 .Main h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+.Projects {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.Projects img {`
+    max-height: 800px;
+}
+
+.Projects h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 35px;
+}
+
+.Photo {
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    float: left;
+    width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+    .Photo {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Photo {
+        width: 100%;
+    }
 }
