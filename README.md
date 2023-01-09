@@ -5,7 +5,7 @@
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
 - What was your motivation?
--
+-E
 
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 -
