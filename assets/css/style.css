@@ -5,22 +5,24 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
 }
 
-header {
+.Banner {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: #3a00da;
     color: #ffffff;
 }
 
-header h1 {
+.Banner h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-header nav {
+.Banner nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -28,11 +30,11 @@ header nav {
     font-size: 20px;
 }
 
-header nav ul {
+.Banner nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+.Banner nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -52,6 +54,12 @@ p {
     max-width: 150px;
 }
 
+.Intro {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
 main {
     width: auto;
     display: inline-block;
@@ -68,10 +76,10 @@ main {
 
 .Main {
     margin-bottom: 20px;
-    padding: 50px;
+    padding: 10px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #3a00da;
     color: #ffffff;
 }
 
@@ -86,14 +94,14 @@ main {
 
 .Projects {
     margin-bottom: 20px;
-    padding: 50px;
+    padding: 10px;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #3a00da;
     color: #ffffff;
 }
 
-.Projects img {`
+.Projects img {
     max-height: 800px;
 }
 
@@ -102,19 +110,43 @@ main {
     font-size: 36px;
 }
 
+.Group-Project {
+    border-style: solid;
+    border-width: .5px;
+    float: right;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #3a00da;
+    color: #ffffff;
+}
+
+.Photo-Projects {
+    border-style: solid;
+    border-width: .5px;
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #3a00da;
+    color: #ffffff;
+}
+
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    background-color: #3a00da;
 }
 
 footer h2 {
-    font-size: 20px;
-}
-
-footer ul {
-    list-style-type: none;
+    font-size: 50px;
+    color: #ffffff;
 }
 
 footer ul li {
@@ -124,22 +156,86 @@ footer ul li {
     font-size: 35px;
 }
 
-.Photo {
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    float: left;
-    width: 50%;
-}
-
-@media screen and (max-width: 992px) {
-    .Photo {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .Photo {
+@media screen and (max-width: 980px) {
+    .Banner {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      .Banner h1 {
         width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-size: 10vw;
+      }
+    
+      .Banner nav {
+        justify-content: center;
+      }
+
+      .float-left {
+        float: left;
+        margin-right: 25px;
+        max-width: 125px;
     }
-}
+
+      .Intro {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        height: 653px;
+    }
+    }
+    
+    @media screen and (max-width: 768px) {
+      
+        .Banner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .float-left {
+        float: left;
+        margin-right: 25px;
+        max-width: 100px;
+    }
+
+      .Intro {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        height: 10px;
+    }
+    
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    
+    @media screen and (max-width: 334px) {
+      
+        .Banner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .float-left {
+        float: left;
+        margin-right: 25px;
+        max-width: 100px;
+    }
+
+      .Intro {
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 10px;
+    }
+    
+      .footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
