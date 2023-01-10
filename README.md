@@ -25,7 +25,7 @@ N/A
 
 For any information you need to get to on the page you can click the titles of the sections next to my name at the top of the page. With that there is access to my contact information, as well as my previous work on assignments which you can click on to access those pages. You can also read more information about me at the about me page and view a photo of me.
 
-![alt text](assets/images/screenshot.png)
+![Version 1](assets/images/My-Portfolio-Screenshot.jpeg)
 
 ## Credits
 
